@@ -1,0 +1,8 @@
+Tomcat installation:
+yum install wget -y && yum install unzip -y yum install java -y
+wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.75/bin/apache-tomcat-8.5.75.zip --no-check-certificate
+unzip apache-tomcat-8.5.75.zip
+vi apache-tomcat-8.5.75/conf/tomcat-users.xml
+vi apache-tomcat-8.5.75/webapps/manager/META-INF/context.xml
+chmod 777 apache-tomcat-8.5.75/bin/startup.sh apache-tomcat-8.5.75/bin/shutdown.sh apache-tomcat-8.5.75/bin/catalina.sh
+./apache-tomcat-8.5.75/bin/startup.sh

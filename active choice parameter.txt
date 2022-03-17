@@ -1,0 +1,22 @@
+Active Choices Parameter
+Name
+
+return['None', 'game of life', 'my scripts']
+
+
+
+Active Choices Reactive Parameter
+Name
+
+if(url.equals('None'))
+{
+return['NA']
+}
+else if(url.equals('game of life'))
+{
+return['https://github.com/wakaleo/game-of-life.git']
+}
+else if(url.equals('my scripts'))
+{
+return['https://github.com/your/new.git']
+}

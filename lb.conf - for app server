@@ -1,0 +1,24 @@
+proxyRequests off
+
+<Proxy balancer://mycluster>
+    # WebHead1
+    BalancerMember http://18.218.93.244:80
+
+    # WebHead2
+    BalancerMember http://52.15.238.147:80
+   
+    # WebHead3
+    BalancerMember http://18.218.93.244:80
+
+    # WebHead4
+    BalancerMember http://52.15.238.147:80
+
+    ProxySet lbmethod=byrequests
+
+</Proxy>
+<location /balancer-manager>
+        SetHandler balancer-manager
+        Require host example.com
+</location>
+ProxyPass /balancer-manager !
+ProxyPass / balancer://mycluster

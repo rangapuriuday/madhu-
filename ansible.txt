@@ -1,0 +1,13 @@
+yum install epel-release -y && yum install ansible -y
+vi /etc/ansible/hosts
+add below details in hosts file
+[nodes]
+PVT ip   ansible-user=<username>
+
+
+
+
+[ALL]
+172.31.32.104 ansible_user=ans-slave1
+172.31.35.8 ansible_user=ans-slave2
+

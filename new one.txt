@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    tools {
+       maven "Maven"
+    }
+    stages {
+        stage('Build') {
+            steps {
+                git 'https://github.com/wakaleo/game-of-life.git'
+                sh "mvn -Dmaven.test.failure.ignore=true clean install"
+            }
+        }
+}
+post {
+     always {
+
+deploy adapters: [tomcat8(credentialsId: 'c5d92169-2e39-43d7-9a6e-4e998b168795', path: '', url: 'http://3.110.130.233:8080')], contextPath: null, war: '**/*.war'
+}
+}
+}

@@ -1,0 +1,28 @@
+yum install httpd -y && service httpd start && vi /var/www/html/index.html
+
+
+<html>
+<head>
+<body>
+<h1> hi uday </h1>
+</body>
+</head>
+</html>
+
+
+<html>
+<head>
+<body>
+<h1> howru uday </h1>
+</body>
+</head>
+</html>
+
+
+Web Server:
+
+yum install httpd -y && service httpd start
+
+cd /etc/httpd/conf.d/
+vi lb.conf
+service httpd restart

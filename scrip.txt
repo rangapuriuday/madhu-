@@ -1,0 +1,7 @@
+post {
+     always {
+
+deploy adapters: [tomcat8(credentialsId: 'e512db26-d391-4059-9f5c-27aa18c9bbcb', path: '', url: 'http://3.134.109.253:8080')], contextPath: null, war: '**/*.war'
+}
+}
+}

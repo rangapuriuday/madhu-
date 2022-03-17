@@ -1,0 +1,21 @@
+Jenkins Installation:
+
+yum install wget -y && yum install unzip -y && yum install java -y
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo --no-check-certificate
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo yum install -y epel-release java-11-openjdk-devel
+sudo yum install jenkins -y
+sudo systemctl daemon-reload
+sudo systemctl start jenkins
+systemctl status jenkins
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+Nexus installation:
+
+yum install wget -y && yum install unzip -y && yum install java -y
+wget https://download.sonatype.com/nexus/oss/nexus-2.14.4-03-bundle.zip
+unzip nexus-2.14.4-03-bundle.zip
+vi nexus-2.14.4-03/bin/nexus (uncomment# then replace RUN_AS_USER=root)
+bash nexus-2.14.4-03/bin/nexus restart

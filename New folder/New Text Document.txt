@@ -1,0 +1,114 @@
+1. pwd Command
+The pwd command is used to display the location of the current working directory.
+
+2. mkdir Command
+The mkdir command is used to create a new directory under any directory.
+
+3. cd ../ Command
+The cd ../ command is used to back space to directory 
+
+4. ls Command
+The ls command is used to display a list of content of a directory.
+
+5. cd Command
+The cd command is used to change the current directory.
+
+6. touch Command
+The touch command is used to create empty files. We can create multiple empty files by executing it once.
+
+7. cat Command
+The cat command is a multi-purpose utility in the Linux system. It can be used to create a file, 
+display content of the file, copy the content of one file to another file, and more.
+
+8. cd filename/filename Command
+Thecd filename/filename  command is used to go front  to directory 
+
+9. cp Command
+The cp command is used to copy a file or directory.
+
+10. mv Command
+The mv command is used to move a file or a directory form one location to another location.
+
+11. rename Command
+The rename command is used to rename files. It is useful for renaming a large group of files.
+
+12. head Command
+The head command is used to display the content of a file. It displays the first 10 lines of a file
+
+13. tail Command
+The tail command is similar to the head command. The difference between both commands is that it 
+displays the last ten lines of the file content. It is useful for reading the error message
+
+14. useradd Command
+The useradd command is used to add or remove a user on a Linux server.
+
+15. passwd Command
+The passwd command is used to create and change the password for a user
+
+16. grep Command
+The grep is the most powerful and used filter in a Linux system. The 'grep' stands for "global regular expression print." It is useful for searching 
+the content
+ from a file. Generally, it is used with the pipe.
+
+
+17. sed command (sed -i 's/what we need to add/replace/g' filename) for permant change
+ (sed 's/what we need to add/replace/g' filename) fortemporary change
+
+The sed command is also known as stream editor. It is used to edit files using a regular expression. It does not permanently edit files; instead, 
+the edited content remains 
+only on display. It does not affect the actual file.
+
+18 tree command
+The tee command is quite similar to the cat command. The only difference between both filters is that it puts standard input on standard 
+output and also write them into a file.
+
+19 ln -s filename anotherfilename   command
+The ln -s command is create soft link of the file name 
+
+20 sleep Command
+The sleep command is used to hold the terminal by the specified amount of time. By default, 
+it takes time in seconds.
+
+21 time Command
+The time command is used to display the time to execute a command.
+
+
+22 exit Command
+Linux exit command is used to exit from the current shell. It takes a parameter as a number and exits 
+the shell with a return of status number.
+
+23 clear Command
+Linux clear command is used to clear the terminal screen.
+
+24 ip Command
+Linux ip command is an updated version of the ipconfig command. It is used to assign an IP address, 
+initialize an interface, disable an interface.
+
+25 ssh Command
+Linux ssh command is used to create a remote connection through the ssh protocol.
+
+26 mail Command
+The mail command is used to send emails from the command line.
+
+26 :wq Command
+The :wq is used for save and quit
+
+26 :q Command
+The :wq is used for  quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
